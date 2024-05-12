@@ -23,7 +23,7 @@ stage("test"){
                 sh 'mvn surefire-report:report'
                  echo "----------- unit test Complted ----------"
             }
-}
+        }
 stage("Jar Publish") {
         steps {
             script {
@@ -48,8 +48,9 @@ stage("Jar Publish") {
              }
         }   
     }
-   }
+        }
 }
+
 
 
 
