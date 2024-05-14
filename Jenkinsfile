@@ -70,5 +70,4 @@ stage("Jar Publish") {
             }
         }
     }   
- }
 }
