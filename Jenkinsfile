@@ -70,6 +70,5 @@ stage(" Docker Build ") {
             }
         }
     }
-
 }
 }
