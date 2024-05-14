@@ -26,6 +26,8 @@ stage("test"){
                  echo "----------- unit test Complted ----------"
             }
         }
+   }
+}
 stage("Jar Publish") {
         steps {
             script {
@@ -50,5 +52,3 @@ stage("Jar Publish") {
              }
         }   
     }
-   }
-}
