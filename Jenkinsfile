@@ -1,6 +1,3 @@
-def registry = 'https://valaxy0555.jfrog.io//'
-def imageName = 'valaxy0555.jfrog.io/valaxy-docker-local/ttrend'
-def version   = '2.1.2'
 pipeline {
     agent {
         node {
@@ -26,8 +23,6 @@ stage("test"){
                  echo "----------- unit test Complted ----------"
             }
         }
-   }
-}
 stage("Jar Publish") {
         steps {
             script {
@@ -52,3 +47,5 @@ stage("Jar Publish") {
              }
         }   
     }
+   }
+}
